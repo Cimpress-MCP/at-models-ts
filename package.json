@@ -1,7 +1,7 @@
 {
   "name": "at-models-ts",
   "description": "AT shared models for TypeScript projects",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/index.ts",
   "private": false,
   "files": [
