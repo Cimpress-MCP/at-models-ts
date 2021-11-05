@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "eslint --ext .ts src tests"
+    "lint": "eslint --ext .ts src"
   },
   "publishConfig": {
     "access": "public"
