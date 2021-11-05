@@ -1,0 +1,55 @@
+{
+  "name": "at-models-ts",
+  "description": "AT shared models for TypeScript projects",
+  "version": "0.0.0",
+  "main": "lib/index.ts",
+  "private": false,
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts src tests"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cimpress-MCP/at-models-ts.git"
+  },
+  "author": "AT Squad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cimpress-MCP/at-models-ts/issues"
+  },
+  "homepage": "https://github.com/Cimpress-MCP/at-models-ts.git#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-cimpress-atsquad": "2.1.5",
+    "husky": "^4.2.5",
+    "jest": "25.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "typescript": "4.3.5",
+    "ts-node": "8.10.2"
+  },
+  "eslintConfig": {
+    "extends": "cimpress-atsquad"
+  },
+  "prettier": "eslint-config-cimpress-atsquad/prettier",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.{js,json,yml,yaml,md}": [
+      "prettier --write"
+    ]
+  }
+}
